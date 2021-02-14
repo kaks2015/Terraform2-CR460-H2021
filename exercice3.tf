@@ -1,5 +1,5 @@
 provider "google" {
-  project = "zonedetest"
+  project = "cr460-dev1-304419"
   credentials = "account.json"
   region  = "northamerica-northeast1"
   zone    = "northamerica-northeast1-a"
@@ -29,7 +29,8 @@ resource "google_compute_instance" "instance2" {
 
   boot_disk {
     initialize_params {
-      image = "ubuntu-os-cloud/ubuntu-1910"
+      #image = "ubuntu-os-cloud/ubuntu-1910"
+      image = "ubuntu-os-cloud/ubuntu-1804-lts"
     }
   }
 
